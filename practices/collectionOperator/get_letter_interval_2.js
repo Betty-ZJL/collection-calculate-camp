@@ -10,8 +10,8 @@ function get_letter_interval_2(number_a, number_b) {
     number_b=y;
     flag=1;
   }
-  for(var i=number_a;i<=number_b;i++){
-    var letters=[];
+  for(let i=number_a;i<=number_b;i++){
+    let letters=[];
     c=i;
     while(c!=0){
       y=c%26;
