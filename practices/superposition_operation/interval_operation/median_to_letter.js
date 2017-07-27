@@ -2,7 +2,9 @@
 
 function median_to_letter(collection) {
 
-  //在这里写入代码
+  var median=collection[parseInt(collection.length/2)];
+  var letters=[String.fromCharCode(parseInt(median/26)+96),String.fromCharCode(parseInt(median%26)+96)];
+  return letters.join('');
 }
 
 module.exports = median_to_letter;

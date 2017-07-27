@@ -1,8 +1,8 @@
 'use strict';
 
 function average_to_letter(collection) {
-
-  //在这里写入代码
+  var avr=collection.reduce(function(total,num){return total+num})/collection.length;
+  return String.fromCharCode(Math.ceil(avr)+96);
 }
 
 module.exports = average_to_letter;

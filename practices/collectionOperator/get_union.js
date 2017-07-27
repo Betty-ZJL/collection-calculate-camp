@@ -1,11 +1,9 @@
 'use strict';
 
 function get_union(collection_a, collection_b) {
-  for(var i=0;i<collection_b.length;i++){
-    if (!collection_a.includes(collection_b[i]))
-      collection_a.push(collection_b[i]);
-  }
-  return collection_a;
+  collection_b=collection_b.filter( function (t) { return !collection_a.includes(t) });
+  return collection_a.concat(collection_b);
+ 
 }
 
 module.exports = get_union;
